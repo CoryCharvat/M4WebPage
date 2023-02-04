@@ -1,29 +1,71 @@
-body {
-    background-color: #c9a6a6c0;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 125%
+
+html{
+    --global-color-1: #ef6423;
+    --global-color-2: #4f210a;
+    --global-color-3: white;
+    background: linear-gradient(180deg, yellow 0%, var(--global-color-1) 0%, orange 100%);
 }
-strong.EyeCatch{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+    margin: 0%;
+}
+img{
+    display:block;
+   margin-left: auto;
+   margin-right: auto;
+}
+h1{
+    text-align:center;
+    font-size: 200%;
+}
+h2{
+    text-align: center;
+}
+p{
+    font-size: 90%;
+    text-align: center;
+}
+.EyeCatch{
     font-family:'Franklin Gothic MediumSS', 'Arial Narrow', Arial, sans-serif;
-    color: #0000ff;
+    color: #0505f8;
+    font-size: 125%;
     font-style:italic ;
 }
-body ul {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+.box{
+    background-color: var(--global-color-3);
+    border-radius: 10px 10px 10px 10px;
+    border: .5em solid var(--global-color-3);
+    padding: 0%, 0%, 00%, 0%;
 }
-
-ol {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+ul.box {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
 }
-
+ol.box {
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 5%;
+}
+nav{
+   text-align: center;
+    font-size: 1em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
 a:hover {
     font-style: italic;
     color: #0000ff;
 }
-
-/* relation selector < or + */
+footer{
+   	text-align: center;
+	margin-top: 1%;
+	border-top: 3px solid var(--global-color-2);
+	border-bottom: 3px solid var(--global-color-2);
+    
+	background-color: var(--global-color-2);
+	color: rgb(228, 214, 214);
+}
