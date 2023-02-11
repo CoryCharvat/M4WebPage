@@ -1,16 +1,57 @@
-body{
-width: 964px;
-background-color: white;
-margin: 15px auto;
-border: 1px solid rgb(0, 0, 0);
-}
+
 header{
     text-align: center;
-    border-bottom: 1px solid rgb(0, 0, 0);
+}
+body{
+    width: 964px;
+    background-color: bisque;
+    margin: 15px auto;
+    border: 7px solid black; /**/
+    }
+/* the styles for the navigation menu */
+
+#nav_menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 192.8px;
+   
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: yellow;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 #sidebarA{
 width: 180px;
-height: 165px;
+height:auto;
 float: left;
 border-right: 2px solid rgb(0, 0, 0);
 }
@@ -20,11 +61,7 @@ float: left;
 }
 #sidebarB{
 width: 180px;
-height: 165px;
+height: auto;
 float: right;
 border-left: 2px solid rgb(0, 0, 0);
-}
-footer{
-    text-align: center;
- 
 }

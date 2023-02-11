@@ -1,3 +1,4 @@
+
 html{
     --global-color-1: #ef6423;
     --global-color-2: #4f210a;
@@ -7,13 +8,72 @@ html{
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 125%;
-    margin: 0%;
+    margin: 0 auto;
+    border: 0px;
+    margin: 0px;
 }
+main {
+    background-color: rgb(238, 60, 60);
+}
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;  }
+
+/* the styles for the navigation menu */
+#nav_menu{
+    padding-bottom: 0%;
+}
+#nav_menu ul {
+	list-style: none;
+	margin: 0;
+    clear:right;
+    
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 370px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: yellow;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* the styles imgs */
 img{
     display:block;
    margin-left: auto;
    margin-right: auto;
 }
+
+/* the styles for body */
 h1{
     text-align:center;
     font-size: 200%;
@@ -31,40 +91,75 @@ p{
     font-size: 125%;
     font-style:italic ;
 }
-.box{
-    background-color: var(--global-color-3);
-    border-radius: 10px 10px 10px 10px;
-    border: .5em solid var(--global-color-3);
-    padding: 0%, 0%, 00%, 0%;
-}
-ul.box {
+.boxapp{
     text-align: center;
-    width: fit-content;
-    margin: auto;
 }
-ol.box {
-    margin: auto;
-    width: fit-content;
-    margin-bottom: 5%;
+.boxapp li{
+    display: inline-block;
+    list-style:none;
+    padding-left: 5%;
+    left: 10%;
+}
+.line1{
+ width: 90%;
+
+}
+.line2{
+    width: 90%;
+   
+   
+   }
+.line3{
+    width: 90%;
+   
+   
+   }
+
+.boxwhy{
+    text-align: center;
+}
+.boxwhy li{
+    display: inline-block;
+
+    list-style: none;
+    padding-left: 5%;
+ 
+    left: 10%;
+}
+.app{
+    text-align: left;
+    padding-left: 5%;
+}
+.Why{
+    text-align: left;
+    padding-left: 5%;
+
 }
 nav{
    text-align: center;
     font-size: 1em;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 30%;
-    margin-right: 30%;
+    padding-bottom: 2%;
 }
 a:hover {
     font-style: italic;
     color: #0000ff;
 }
 footer{
-   	text-align: center;
-	margin-top: 1%;
-	border-top: 3px solid var(--global-color-2);
-	border-bottom: 3px solid var(--global-color-2);
+    text-align: center;
     
-	background-color: var(--global-color-2);
-	color: rgb(228, 214, 214);
+    border-top: 3px solid var(--global-color-2);
+    border-bottom: 3px solid var(--global-color-2);
+    
+    background-color: var(--global-color-2);
+    color: rgb(228, 214, 214);
+
 }
+article{
+    padding-top: 1%;
+}
+footer p{
+    text-align: left;
+    font-size: 70%;
+    padding-left: 5%;
+}
+
